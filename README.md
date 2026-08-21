@@ -63,7 +63,7 @@ A Kafka broker is a single server in the Kafka system. It receives messages from
 
 📊 Quick Comparison Table
 ============================
-**Concept	         Role in Kafka	                Beginner Analogy** <br/>
+**Concept	 &nbps;&nbps; Role in Kafka	&nbps;&nbps;  Beginner Analogy** <br/>
 Broker	           Stores and serves data	        Post office <br/>
 Cluster	           Group of brokers	              City with many post offices <br/>
 Topic	         	   Category of messages	          Mailbox label <br/>
