@@ -82,20 +82,20 @@ So, brokers are the radio towers that make sure the signal (data) gets from DJ t
 
 Kafka 4.3.1 locally on Windows 10
 ==================================
-**🖥️ Kafka Broker on Windows 10**
+**🖥️ Kafka Broker on Windows 10** <br/>
 
-Broker: In your local setup, the broker is simply the Kafka server process that runs when you start kafka-server-start.bat with the server.properties file.
+Broker: In your local setup, the broker is simply the Kafka server process that runs when you start kafka-server-start.bat with the server.properties file. <br/>
 
-Storage: It stores messages (events) in topics and their partitions on your Windows filesystem (usually inside the logs directory defined in server.properties).
+Storage: It stores messages (events) in topics and their partitions on your Windows filesystem (usually inside the logs directory defined in server.properties). <br/>
 
-Communication: It listens on a port (default 9092) for producers to send data and consumers to read data.
+Communication: It listens on a port (default 9092) for producers to send data and consumers to read data. <br/>
 
-Single-node setup: Since you installed Kafka locally, you likely have one broker running. That’s enough for testing, but in production you’d run multiple brokers (a cluster).
+Single-node setup: Since you installed Kafka locally, you likely have one broker running. That’s enough for testing, but in production you’d run multiple brokers (a cluster). <br/>
 
 Check Kafka Version on Windows 10
 ==================================
-C:\kafka>.\bin\windows\kafka-run-class.bat kafka.Kafka --version
-Output => 2026-08-21T22:53:18.796272700Z main ERROR Reconfiguration failed: No configuration found for '14dad5dc' at 'null' in 'null'
+C:\kafka>.\bin\windows\kafka-run-class.bat kafka.Kafka --version <br/>
+Output => 2026-08-21T22:53:18.796272700Z main ERROR Reconfiguration failed: No configuration found for '14dad5dc' at 'null' in 'null' <br/>
 4.3.1
 
 
