@@ -115,10 +115,10 @@ Coordination:&nbsp; ZooKeeper (or KRaft in newer versions) keeps track of which 
 
 **📦 Real-Life Analogy**<br/>
 &nbsp;Imagine a library system: <br/>
-&nbsp;&nbsp;Each library branch (broker) stores books (messages). <br/>
-&nbsp;&nbsp;Together, all branches form the library network (cluster). <br/>
-&nbsp;&nbsp;If one branch closes, you can still get the book from another branch (replication). <br/>
-&nbsp;&nbsp;More branches mean more people can borrow books at the same time (scalability). <br/>
+&ensp;Each library branch (broker) stores books (messages). <br/>
+&ensp;Together, all branches form the library network (cluster). <br/>
+&ensp;If one branch closes, you can still get the book from another branch (replication). <br/>
+&ensp;More branches mean more people can borrow books at the same time (scalability). <br/>
 
 Another analogy: <br/>
 &nbsp;Post offices in a city = brokers. <br/>
@@ -126,9 +126,9 @@ Another analogy: <br/>
 &nbsp;If one post office shuts down, others still deliver mail. <br/>
 
 **🚀 Why Clusters Matter**<br/>
-High availability: No single point of failure. <br/>
-Performance: Multiple brokers balance load. <br/>
-Scalability: Easy to add more brokers as data grows. <br/>
+&ensp;High availability: No single point of failure. <br/>
+&ensp;Performance: Multiple brokers balance load. <br/>
+&ensp;Scalability: Easy to add more brokers as data grows. <br/>
 
 
 
