@@ -73,12 +73,12 @@ A Kafka broker is a single server in the Kafka system. It receives messages from
 
 📦 How It Works (Simple Analogy)
 ====================================
-Imagine a radio station:
-The DJ (producer) sends out songs (messages).
-The radio frequency (topic) organizes what’s being broadcast.
-The radio towers (brokers) store and transmit the signal.
-The listeners (consumers) tune in to hear the songs.
-So, brokers are the radio towers that make sure the signal (data) gets from DJ to listener reliably.
+Imagine a radio station: <br/>
+The DJ (producer) sends out songs (messages). <br/>
+The radio frequency (topic) organizes what’s being broadcast. <br/>
+The radio towers (brokers) store and transmit the signal. <br/>
+The listeners (consumers) tune in to hear the songs. <br/>
+So, brokers are the radio towers that make sure the signal (data) gets from DJ to listener reliably. <br/>
 
 Kafka 4.3.1 locally on Windows 10
 ==================================
