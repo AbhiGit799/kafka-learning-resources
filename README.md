@@ -114,16 +114,16 @@ Durability:&nbsp; Messages are stored on disk across brokers, ensuring they aren
 Coordination:&nbsp; ZooKeeper (or KRaft in newer versions) keeps track of which broker is leader for each partition. <br/>
 
 **📦 Real-Life Analogy**<br/>
-Imagine a library system: <br/>
-Each library branch (broker) stores books (messages). <br/>
-Together, all branches form the library network (cluster). <br/>
-If one branch closes, you can still get the book from another branch (replication). <br/>
-More branches mean more people can borrow books at the same time (scalability). <br/>
+&nbsp;Imagine a library system: <br/>
+&nbsp;&nbsp;Each library branch (broker) stores books (messages). <br/>
+&nbsp;&nbsp;Together, all branches form the library network (cluster). <br/>
+&nbsp;&nbsp;If one branch closes, you can still get the book from another branch (replication). <br/>
+&nbsp;&nbsp;More branches mean more people can borrow books at the same time (scalability). <br/>
 
 Another analogy: <br/>
-Post offices in a city = brokers. <br/>
-City postal system = cluster. <br/>
-If one post office shuts down, others still deliver mail. <br/>
+&nbsp;Post offices in a city = brokers. <br/>
+&nbsp;City postal system = cluster. <br/>
+&nbsp;If one post office shuts down, others still deliver mail. <br/>
 
 **🚀 Why Clusters Matter**<br/>
 High availability: No single point of failure. <br/>
