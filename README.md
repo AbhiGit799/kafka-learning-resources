@@ -106,12 +106,12 @@ For a beginner, think of it as multiple post offices in a city — if one closes
 
 **🧩 Technical Explanation**
 
-Cluster: A set of Kafka brokers running together. <br/>
-Broker: Each broker is a server that stores topic partitions and serves producer/consumer requests. <br/>
-Replication: Data is copied across brokers so if one fails, another has the backup. <br/>
-Scalability: More brokers = more capacity to handle producers/consumers. <br/>
-Durability: Messages are stored on disk across brokers, ensuring they aren’t lost. <br/>
-Coordination: ZooKeeper (or KRaft in newer versions) keeps track of which broker is leader for each partition. <br/>
+Cluster: &nbsp; A set of Kafka brokers running together. <br/>
+Broker: &nbsp; Each broker is a server that stores topic partitions and serves producer/consumer requests. <br/>
+Replication: &nbsp; Data is copied across brokers so if one fails, another has the backup. <br/>
+Scalability:&nbsp; More brokers = more capacity to handle producers/consumers. <br/>
+Durability:&nbsp; Messages are stored on disk across brokers, ensuring they aren’t lost. <br/>
+Coordination:&nbsp; ZooKeeper (or KRaft in newer versions) keeps track of which broker is leader for each partition. <br/>
 
 
 
