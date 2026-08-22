@@ -585,5 +585,85 @@ This command starts your Kafka broker on Windows.   <br/>
 The broker is the heart of Kafka — it stores messages in topics and serves them to consumers.   <br/>
 Without running this command, Kafka won’t be able to process or deliver any data.  <br/>
 
+Kafka Topic Creation Command
+=============================
+
+**🖥️ What the Command Does** <br/>
+.\bin\windows\kafka-topics.bat --create --topic quickstart-events --bootstrap-server localhost:9092
+
+- kafka-topics.bat  
+This is the Windows batch script used to manage topics in Kafka (create, list, delete, describe).
+
+- --create  
+Tells Kafka you want to create a new topic.
+
+- --topic quickstart-events  
+Names the topic you are creating. Here, the topic is called quickstart-events.
+
+- --bootstrap-server localhost:9092  
+Specifies the Kafka broker to connect to.   <br/>
+localhost → means the broker is running on your local machine.  <br/>
+9092 → the default port where Kafka broker listens.  <br/>
+
+**📦 In Simple Terms**   <br/>
+This command creates a new topic called quickstart-events in your Kafka broker running on localhost:9092.  <br/>
+Think of it like setting up a new “mailbox” (topic) where producers can drop messages and consumers can read them.  <br/>
+
+**🔑 Key Notes**   <br/>
+You can add extra options like --partitions 3 or --replication-factor 1 to control how the topic is structured.  <br/>
+If you don’t specify partitions or replication, Kafka uses defaults (usually 1 partition, replication factor 1).  <br/>
+Topics are essential because they organize messages into categories, so producers and consumers know where to send and read data. <br/>
+
+Kafka Topics Listing Command
+============================
+To list all topics in Kafka, you use the Kafka Topics Listing Command. On Windows, it looks like this:   <br/>
+.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092   <br/>
+
+**🖥️ Command Breakdown**    <br/>
+kafka-topics.bat → The script to manage topics (create, list, delete, describe).   <br/>
+--list → Tells Kafka to show all existing topics.   <br/>
+--bootstrap-server localhost:9092 → Connects to the broker running on your machine at port 9092.   <br/>
+
+**📦 In Simple Terms**    <br/>
+This command asks the Kafka broker:   <br/>
+👉 “Show me all the topic names you currently have.”   <br/>
+If you previously created quickstart-events, you’ll see it listed here. If you’ve made more topics, they’ll all appear in the output.
+
+
+Kafka Console Producer Command
+================================
+That command is called the Kafka Console Producer Command. It’s how you send messages into a Kafka topic. Let’s break it down: <br/>
+
+**🖥️ Command Breakdown**  <br/>
+.\bin\windows\kafka-console-producer.bat --topic quickstart-events --bootstrap-server localhost:9092
+
+- kafka-console-producer.bat  
+A Windows batch script that launches a simple producer client. It lets you type messages directly into the console and sends them to Kafka.
+
+- --topic quickstart-events  
+Specifies the topic where the producer will send messages. In this case, the topic is quickstart-events.
+
+- --bootstrap-server localhost:9092  
+Tells the producer which Kafka broker to connect to. <br/>
+localhost → broker is running on your local machine. <br/>
+9092 → default Kafka broker port. <br/>
+
+**📦 In Simple Terms** <br/>
+This command starts a producer client that connects to your Kafka broker and sends messages into the topic quickstart-events. <br/>
+Once you run it, you can type lines of text in the console — each line becomes a message published to that topic. <br/>
+
+**🔑 Key Notes**
+- Every line you type after running the command is sent as a Kafka record. <br/>
+- Consumers subscribed to quickstart-events will immediately receive those messages. <br/>
+- This is mainly used for testing and learning; in real applications, producers are written in code (Java, Node.js, Python, etc.) instead of typing manually. <br/>
+
+
+
+
+
+
+
+
+
 
 
