@@ -310,6 +310,7 @@ Instead of just sending or receiving messages, Streams lets you transform, join,
 So in short: Kafka Streams API is like a built-in toolkit that lets your app read data from Kafka topics, process it in real time, <br/>
 and write results back — just like a water filter cleaning and transforming water as it flows.
 
+<br/> <br/>
 
 **🧩 Streams API in Node.js**
 - The Kafka Streams API is officially a Java library that ships with Kafka.
@@ -330,8 +331,7 @@ and write results back — just like a water filter cleaning and transforming wa
 - Producer sends results into topic trending-hashtags.
 - 👉 This mimics what Kafka Streams does in Java, but you’re coding the logic yourself in Node.js.
 
-⚠️ Beginner Tip
-================
+**⚠️ Beginner Tip**
 - If you’re learning Kafka, stick with KafkaJS in Node.js.
 - If you want full Streams API features (windowing, joins, aggregations), you’ll need Java.
 - In Node.js, you build the stream logic manually, but it’s simpler for beginners.
