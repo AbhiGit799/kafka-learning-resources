@@ -658,12 +658,28 @@ Once you run it, you can type lines of text in the console — each line becomes
 - This is mainly used for testing and learning; in real applications, producers are written in code (Java, Node.js, Python, etc.) instead of typing manually. <br/>
 
 
+Kafka Console Consumer Command
+===============================
+It’s how you read messages from a Kafka topic. <br/>
 
+**🖥️ Command Breakdown** <br/>
+.\bin\windows\kafka-console-consumer.bat --topic quickstart-events --from-beginning --bootstrap-server localhost:9092  <br/>
 
+- kafka-console-consumer.bat  
+A Windows batch script that launches a simple consumer client. It lets you view messages from a Kafka topic directly in the console.
 
+- --topic quickstart-events  
+Specifies the topic you want to consume messages from. Here, it’s quickstart-events.
 
+- --from-beginning  
+Tells Kafka to read all messages from the start of the topic, not just new ones arriving after the consumer starts.
+Without this flag, you’d only see new incoming messages.
+With it, you’ll see the entire history of the topic.
 
+- --bootstrap-server localhost:9092  
+Connects to the Kafka broker running locally on port 9092.
 
-
-
+**📦 In Simple Terms**  <br/>
+This command starts a consumer client that connects to your Kafka broker and reads messages from the topic quickstart-events.  <br/>
+If you previously used the console producer to send messages, this consumer will display them line by line in your terminal.  <br/>
 
