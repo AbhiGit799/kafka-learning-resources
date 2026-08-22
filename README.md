@@ -301,8 +301,7 @@ Instead of just sending or receiving messages, Streams lets you transform, join,
 &emsp; Output topic = pipe carrying clean water.  <br/>
 &emsp; 👉 Streams API transforms raw data into useful results as it flows.  <br/>
 
-⚠️ Beginner Tips
-==================
+**⚠️ Beginner Tips**
 - Streams API is not a separate server — it runs inside your app.
 - It’s different from Kafka Connect (which moves data between systems).
 - Perfect for real-time analytics, monitoring, and transformations. 
